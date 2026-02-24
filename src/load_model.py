@@ -12,7 +12,8 @@ tokenizer = open_clip.get_tokenizer(model_name)
 # Load the downloaded checkpoint
 checkpoint_path = "models/RemoteCLIP-ViT-L-14.pt" # Change to "models/RemoteCLIP-ViT-B-32.pt" if using the smaller model
 checkpoint = torch.load(checkpoint_path, map_location="cpu")
-model.load_state_dict(checkpoint)
+message = model.load_state_dict(checkpoint)
+print(message)
 model.eval() # Set the model to evaluation mode
 
 print("model loaded successfully and ready for inference!")
