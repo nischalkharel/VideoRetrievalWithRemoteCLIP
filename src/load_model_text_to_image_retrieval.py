@@ -22,14 +22,14 @@ print("model loaded successfully and ready for inference!")
 
 text_queries = [
     "A busy airport with many airplanes.", 
-    "Satellite view of Hohai University.", 
-    "A building next to a lake.", 
-    "Many people in a stadium.", 
-    "a cute cat",
+    "satellite view of a city at night", 
+    "cars on the road", 
+    "red ocean", 
+    "green ocean",
     ]
 
 text = tokenizer(text_queries)
-image = preprocess(Image.open("data/ss.jpg")).unsqueeze(0)
+image = preprocess(Image.open("temp_frames/frame_11100.jpg")).unsqueeze(0)
 
 with torch.no_grad():
     image_features = model.encode_image(image)

@@ -29,7 +29,7 @@ embeddings_file = "data/short_video_embeddings.pt"
 
 # Step 1-4: Load the video, extract frames, preprocess, encode them, store embeddings in memory
 video_path = "data/short_video.mp4" # Change this once we have the actual video file
-frame_rate = 60 # Extract 1 frame per second (assuming the video is 30 fps, adjust if needed) basically means we will extract every 30th frame
+frame_rate = 120 # Extract 1 frame per second (assuming the video is 30 fps, adjust if needed) basically means we will extract every 30th frame
 
 cap = cv2.VideoCapture(video_path)
 frame_embeddings = [] # Memory Storage: List of normalized tensors
