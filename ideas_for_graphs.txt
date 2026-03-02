@@ -1,0 +1,3 @@
+Idea 1: Range in batch size to show how increasing it could make GPU more useful. GRAPH
+Idea 2: different number of CPU cores to show how it can get faster time but eventually starts to plateau due to GPU starting to be engaged more. Graph showing # CPU cores (x) vs Frames Per Second (y) to show it being faster
+Idea 3: # CPU cores vs GPU idle time
