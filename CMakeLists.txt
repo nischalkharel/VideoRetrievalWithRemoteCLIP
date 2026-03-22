@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.18)
+project(VideoRetrievalWithRemoteCLIP LANGUAGES CXX)
+set(CMAKE_CXX_STANDARD 17)
+find_package(Torch REQUIRED)
+find_package(OpenCV REQUIRED)
+add_executable(P1_Serial src/P1_Serial.cpp)
+target_link_libraries(P1_Serial ${TORCH_LIBRARIES} ${OpenCV_LIBS})

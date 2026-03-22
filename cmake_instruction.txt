@@ -1,0 +1,4 @@
+rmdir /s /q build -> remove the previous build folder
+cmake -B build -G Ninja -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH="C:/libtorch;C:/opencv/build"
+cmake --build build
+build\P1_Serial.exe
